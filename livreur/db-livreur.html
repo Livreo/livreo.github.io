@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+  <title>Tableau de bord - Espace livreur</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="src/asset/livreur.css">
+  <link rel="stylesheet" href="db-livreur.css">
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+  <link rel="shortcut icon" href="../src/img/Logo.png" type="image/x-icon">
+</head>
+
+<body>
+  <header id="header">
+    <img src="../src/img/Logo.png" alt="Logo profil" id="logo">
+    <div>
+      <h1>Tableau de bord</h1>
+      <h3>(Espace livreur)</h3>
+    </div>
+
+    <nav id="navbar">
+      <button class="menu-toggle" aria-label="Menu"><span class="menu-icon"></span></button>
+      <ul class="menu">
+        <li><a href="../../index.html">Accueil</a></li>
+        <li><a href="#" class="active">Tableau de bord</a></li>
+        <li><a href="liv-livreur.html">Livraison</a></li>
+        <li><a href="#">Revenu</a></li>
+        <li><a href="#">Profil</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="stats-section">
+      <div class="stat-card">
+        <h3>Livraisons en cours</h3>
+        <p id="livraisonsEnCours">0</p>
+      </div>
+
+      <div class="stat-card">
+        <h3>Livraisons terminées</h3>
+        <p id="livraisonsTerminees">0</p>
+      </div>
+
+      <div class="stat-card">
+        <h3>Gains totaux</h3>
+        <p id="gainsTotal">0 FCFA</p>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2024 Livréo. Tous droits réservés.</p>
+  </footer>
+
+  <script src="src/asset/livreur.js"></script>
+  <script src="db-livreur.js"></script>
+</body>
+
+</html>

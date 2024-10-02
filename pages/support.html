@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+  <title>SUPPORT - LIVREO</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="pages.css">
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+  <link rel="shortcut icon" href="../src/img/Logo.png" type="image/x-icon">
+  <link rel="manifest" href="/manifest.json">
+</head>
+
+<body>
+  <header id="header">
+    <div class="header-container">
+      <a href="../index.html"><img src="../src/img/Logo.png" alt="Logo LIVREO" id="logo"></a>
+      <div class="header-text">
+        <h1>SUPPORT</h1>
+      </div>
+    </div>
+
+    <nav>
+        <ul id="menu" class="menu">
+  
+          <li>
+            <a href="#" class="dropdown">L’ENTREPRISE &#9662;</a>
+            <ul class="submenu">
+              <li><a href="about.html">A propos</a></li>
+              <li><a href="term.html">Condition général de service</a></li>
+              <li><a href="privacy.html">Politique de confidentialités</a></li>
+            </ul>
+          </li>
+  
+          <li>
+            <a href="#" class="dropdown">LA MARQUE &#9662;</a>
+            <ul class="submenu">
+              <li><a href="faq.html">FAQ</a></li>
+              <li><a href="pricing.html">Tarif</a></li>
+              <li><a href="support.html">Support</a></li>
+            </ul>
+          </li>
+  
+          <li>
+            <a href="#" class="dropdown">NOUS SUIVRE &#9662;</a>
+            <ul class="submenu">
+              <li><a href="#">LinkedIn</a></li>
+              <li><a href="#">Facebook</a></li>
+              <li><a href="#">WhatsApp</a></li>
+            </ul>
+          </li>
+        </ul>
+        <div class="menu-icon" id="menu-icon"></div>
+      </nav>
+  </header>
+
+  <main>
+    <section class="support">
+        <p>Nous sommes là pour vous aider ! Si vous avez des questions ou des problèmes, n'hésitez pas à nous contacter.</p>
+
+        <form action="mailto:support@livreo.com" method="post" enctype="text/plain">
+            <label for="name">Nom :</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email :</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="message">Message :</label>
+            <textarea id="message" name="message" rows="5" required></textarea>
+
+            <button type="submit">Envoyer</button>
+        </form>
+    </section>
+</main>
+
+  <footer>
+    <p>&copy; 2024 Livréo. Tous droits réservés.</p>
+  </footer>
+
+  <script src="pages.js"></script>
+</body>
+
+</html>

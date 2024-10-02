@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head></head>
+<title>Inscription - Livreo</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="auth.css">
+<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+<link rel="shortcut icon" href="../src/img/Logo.png" type="image/x-icon">
+</head>
+
+<body>
+  <div class="container">
+    <header id="header">
+      <img src="../src/img/Logo.png" alt="Logo profil" id="logo">
+      <h1>Inscription</h1>
+
+      <nav id="navbar">
+        <button class="menu-toggle" aria-label="Menu"><span class="menu-icon"></span></button>
+        <ul class="menu">
+          <li><a href="../../index.html">Accueil</a></li>
+          <li><a href="signup.html" class="active">Inscription</a></li>
+          <li><a href="#">Connexion</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <!-- Inscription -->
+      <section class="form-section">
+        <p>C’est un véritable plaisir pour nous de vous accueillir dans notre communauté.</p>
+
+        <form id="signupForm">
+          <div id="sign-step"></div>
+          <div class="form-group">
+            <label for="role">Je suis</label>
+            <select id="role" name="role" required>
+              <option value="">Sélectionner</option>
+              <option value="vendeur">Vendeur</option>
+              <option value="livreur">Livreur</option>
+            </select>
+          </div>
+
+          <!-- Vendeur -->
+          <div id="vendeurFields" class="additional-fields" style="display:none;">
+            
+            <div class="form-group">
+              <label for="companyName">Raison sociale</label>
+              <input type="text" id="companyName" name="companyName" placeholder="Nom de l'entreprise">
+            </div>
+
+            <div class="form-group">
+              <label for="ifu">N° IFU (facultatif)</label>
+              <input type="text" id="ifu" name="ifu" placeholder="votre N° IFU">
+            </div>
+
+            <div class="form-group">
+              <label for="managerName">Prénoms et Nom du Gérant</label>
+              <input type="text" id="managerName" name="managerName" placeholder="Votre nom et prénoms" required>
+            </div>
+          </div>
+
+          <!-- Champs pour Livreur -->
+          <div id="livreurFields" class="additional-fields" style="display:none;">
+        
+            <div class="form-group">
+              <label for="surname">Prénoms</label>
+              <input type="text" id="surname" name="surname" placeholder="Prénoms" required>
+            </div>
+
+            <div class="form-group">
+              <label for="name">Nom</label>
+              <input type="text" id="name" name="name" placeholder="Nom" required>
+            </div>
+
+            <div class="form-group">
+              <label for="username">Nom d'utilisateur</label>
+              <input type="text" id="username" name="username" placeholder="Nom d'utilisateur" required>
+            </div>
+          </div>
+
+          <!-- Champs communs -->
+          <div id="allFields" class="additional-fields" style="display:none;">
+
+            <div class="form-group">
+              <label for="email">Email</label>
+              <input type="email" id="email" name="email" placeholder="Email" required>
+            </div>
+
+            <div class="form-group">
+              <label for="phone">Numéro de téléphone</label>
+              <input type="text" id="phone" name="phone" placeholder="Numéro de téléphone" required>
+            </div>
+
+            <div class="form-group">
+              <label for="password">Mot de passe</label>
+              <input type="password" id="password" name="password" placeholder="Mot de passe" required>
+            </div>
+
+            <div class="form-group">
+              <label for="confirmPassword">Confirmer Mot de passe</label>
+              <input type="password" id="confirmPassword" name="confirmPassword" placeholder="Confirmer mot de passe"
+                required>
+            </div>
+          </div>
+
+          <button type="submit" class="btn">S'inscrire</button>
+        </form>
+
+        <div class="pop-action">
+          <p>Vous disposez déjà d’un compte ? <a href="?LoginPop=true" class="login">Connecter-vous</a></p>
+        </div>
+      </section>
+
+      <!-- Connexion -->
+      <div id="login-popup" class="popup">
+        <section class="form-section">
+          <span id="login-close" class="popup-close">&times;</span>
+          <h2>CONNEXION</h2>
+          <p>Bienvenu ! Heureux de vous revoir..</p>
+
+          <form id="loginForm">
+            <div class="form-group">
+              <label for="email">Email</label>
+              <input type="email" id="email" name="email" placeholder="Saisissez votre adresse email" required>
+            </div>
+            <div class="form-group">
+              <label for="password">Mot de passe</label>
+              <input type="password" id="password" name="password" placeholder="Entrez votre mot de passe" required>
+            </div>
+            <button type="submit" class="btn">Se connecter</button>
+          </form>
+
+          <div class="pop-action">
+            <p>Vous n'avez pas encore de compte compte ? <a href="auth.html" class="login">Inscrivez-vous</a></p>
+          </div>
+        </section>
+      </div>
+    </main>
+
+    <footer>
+      <p>&copy; 2024 Livréo. Tous droits réservés.</p>
+    </footer>
+  </div>
+
+  <script src="auth.js"></script>
+</body>
+
+</html>
